@@ -57,7 +57,7 @@ var allOfOurCoffees = [
 //=========THE COFFEES=========//
 
 
-
+let allCoffeesSpot = document.getElementById("coffeeRoasts");
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee" style="display: flex; flex-direction: column; flex-wrap: wrap; width: 200px; height: 22px; justify-content: space-around; align-items: center">';
@@ -76,7 +76,18 @@ function renderCoffees(coffees) {
     return html;
 }
 
-
+//======FOR ALL COFFEES TO SHOW INITIALLY IN ASCENDING ORDER BY ID========//
+function initialCoffees(coffees) {
+    var html = '';
+    for(var i = 0; i < coffees.length; i++) {
+        html += renderCoffee(coffees[i]);
+    }
+    return html;
+}
+window.onload = function(){
+   allCoffeesSpot.innerHTML = initialCoffees(coffees);
+}
+//======FOR ALL COFFEES TO SHOW INITIALLY IN ASCENDING ORDER BY ID========//
 
 
 
@@ -249,7 +260,6 @@ season.addEventListener("click", function (){
 
 let coffeeName = document.getElementById("coffeeName");
 let inHouseCoffee = document.getElementById("inHouseCoffeeRoast");
-let allCoffeesSpot = document.getElementById("coffeeRoasts");
 let filteredCoffees = [];
 //==========ROAST SELECTIONS============//
 function logMatchingInHouseRoasts() {
@@ -307,6 +317,7 @@ var addCustom = document.getElementById("customCoffeeButton");
 
 
 addCustom.addEventListener("click", function (){
+    addCustom.disabled = true;
     var roastChoice = customRoast.value;
     var nameChoice = customName.value;
 
@@ -317,7 +328,11 @@ addCustom.addEventListener("click", function (){
 
     allOfOurCoffees.push(newCoffee);
     coffees.push(newCoffee);
+    setTimeout(reEnableCoffeeAdding, 1000);
 });
+function reEnableCoffeeAdding(){
+    addCustom.disabled = false;
+}
 //--------ADD CUSTOM COFFEE----------//
 
 
