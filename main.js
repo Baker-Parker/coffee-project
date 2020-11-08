@@ -212,8 +212,8 @@ season.addEventListener("click", function (){
             allOfOurCoffees.push(coffee);
         });
     } else if(month >= 6 && month <= 8){
-        // document.body.style.backgroundImage = "url('image/stpatricksdaylogo.png')";
-        // dogLogo.src = "image/stpatricksdog.png";
+        document.body.style.backgroundImage = "url('image/summerbackground.jpg')";
+        dogLogo.src = "image/beachdog.png";
         summerCoffees.forEach((coffee) =>{
             allOfOurCoffees.push(coffee);
         });
