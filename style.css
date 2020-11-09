@@ -135,7 +135,7 @@ button:hover{
     width: 50%;
     height: 100%;
     text-align: center;
-    /*margin: auto;*/
+    padding-top: .25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +175,7 @@ button:hover{
     margin: auto 0;
 }
 .companyProduct {
-    height: 65%;
+    height: 85%;
     width: 50%
 }
 .footer {
