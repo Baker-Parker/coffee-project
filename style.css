@@ -146,6 +146,7 @@ button:hover{
 .coffeeWord {
     font-family: 'Bitter', sans-serif;
     height: 100%;
+    width: 30%;
 }
 .dateContainer {
     display: flex;
@@ -175,8 +176,13 @@ button:hover{
     margin: auto 0;
 }
 .companyProduct {
-    height: 85%;
-    width: 50%
+    height: 100%;
+    width: 40%
+}
+.cupOfCoffee{
+    width: 40%;
+    height: 100%;
+    /*background-image: url("");*/
 }
 .footer {
     /*height: 28vh; for mobile*/
