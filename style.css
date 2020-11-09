@@ -30,15 +30,21 @@ h1 {
     color: #654321;
     justify-content: center;
     text-decoration: underline;
-    text-align: center;
 }
-h2, h3, h4, label {
+h2, h4, label {
     display: block;
     text-align: center;
     font-family: 'Bitter', serif;
     color: #654321;
     justify-content: center;
-    text-align: center;
+}
+h3{
+    font-family: "Bitter", serif;
+    color: #654321;
+    font-size: .95em;
+}
+span{
+    font-size: 12px;
 }
 hr {
     background-color: #654321;
@@ -172,7 +178,6 @@ button:hover{
     margin: auto;
 }
 #customCoffeeButton {
-    line-height: 3vh;
     margin: auto 0;
 }
 .companyProduct {
@@ -190,7 +195,7 @@ button:hover{
 }
 
 .footer {
-    /*height: 28vh; for mobile*/
+    /*height: 28vh;*/
     height: 50vh;
     width: 80vw;
     margin: auto;
@@ -239,7 +244,18 @@ a{
     height: 100%;
     width: 100%;
 }
-/*@media screen and(min-width: 425px){*/
+.addCoffeeArea{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.pickRoast{
+    width: 25%;
+}
+.coffeeSearch{
+    width: 25%;
+}
+/*@media screen and(max-width: 425px){*/
 /*    footer{*/
 /*        height: 50vh;*/
 /*    }*/
