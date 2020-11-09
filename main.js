@@ -60,8 +60,8 @@ var allOfOurCoffees = [
 let allCoffeesSpot = document.getElementById("coffeeRoasts");
 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee" style="display: flex; flex-direction: column; flex-wrap: wrap; width: 200px; height: 22px; justify-content: space-around; align-items: center">';
-    html += '<h3>' + coffee.name + '</h3>';
+    var html = '<div class="coffee" style="display: flex; flex-direction: column; flex-wrap: wrap; width: 100%; height: 5%; justify-content: space-around; align-items: center">';
+    html += '<h3 style="padding-right: 1em">' + coffee.name + '</h3>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
@@ -241,7 +241,7 @@ season.addEventListener("click", function (){
             allOfOurCoffees.push(coffee);
         });
     } else if(month === ""){
-        console.log("no input");
+        season.disabled = false;
     }
 });
 //==========APPLY SEASON CHANGES============//
@@ -334,19 +334,6 @@ function reEnableCoffeeAdding(){
     addCustom.disabled = false;
 }
 //--------ADD CUSTOM COFFEE----------//
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

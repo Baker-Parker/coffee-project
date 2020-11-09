@@ -108,6 +108,8 @@ button:hover{
 .main {
     display: flex;
     justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
 }
 
 .coffee-card {
@@ -127,6 +129,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 25%;
 }
 .availableCoffeesSpot{
     width: 50%;
@@ -142,13 +145,18 @@ button:hover{
 }
 .coffeeWord {
     font-family: 'Bitter', sans-serif;
+    height: 100%;
 }
 .dateContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 33%;
     margin: auto;
+}
+#applyDate{
+    margin-top: .1em;
 }
 #seasons{
     max-width: 75%;
@@ -159,6 +167,8 @@ button:hover{
     justify-content: space-evenly;
     align-items: center;
     height: 5vh;
+    width: 90%;
+    margin: auto;
 }
 #customCoffeeButton {
     line-height: 3vh;
@@ -169,6 +179,7 @@ button:hover{
     width: 50%
 }
 .footer {
+    /*height: 28vh; for mobile*/
     height: 50vh;
     width: 80vw;
     margin: auto;
@@ -205,7 +216,7 @@ a{
     color: #654321;
 }
 .followUsArea{
-    height: 10vh;
+    height: 5vh;
     width: 80vw;
     margin: auto;
 }
@@ -215,3 +226,8 @@ a{
 #fillerSubmit{
     display: none;
 }
+/*@media screen and(min-width: 425px){*/
+/*    footer{*/
+/*        height: 50vh;*/
+/*    }*/
+/*}*/
