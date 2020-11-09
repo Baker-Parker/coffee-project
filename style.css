@@ -180,10 +180,15 @@ button:hover{
     width: 40%
 }
 .cupOfCoffee{
-    width: 40%;
-    height: 100%;
-    /*background-image: url("");*/
+    width: 20%;
+    height: 40%;
+    margin: auto;
+    /*background-image: url("image/coffeemug.png");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
 }
+
 .footer {
     /*height: 28vh; for mobile*/
     height: 50vh;
@@ -229,8 +234,10 @@ a{
 #coffeeName {
     padding-left: 1em;
 }
-#fillerSubmit{
-    display: none;
+.coffeeMug {
+    margin: auto;
+    height: 100%;
+    width: 100%;
 }
 /*@media screen and(min-width: 425px){*/
 /*    footer{*/
