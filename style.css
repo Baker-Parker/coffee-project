@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 /*start dog logo*/
 /*img {*/
 /*    justify-items: center;*/
@@ -30,6 +29,7 @@ h1 {
     color: #654321;
     justify-content: center;
     text-decoration: underline;
+    text-align: center;
 }
 h2, h4, label {
     display: block;
@@ -37,14 +37,12 @@ h2, h4, label {
     font-family: 'Bitter', serif;
     color: #654321;
     justify-content: center;
+    text-align: center;
 }
 h3{
-    font-family: "Bitter", serif;
+    font-size: .7em;
+    font-family: 'Bitter', serif;
     color: #654321;
-    font-size: .95em;
-}
-span{
-    font-size: 12px;
 }
 hr {
     background-color: #654321;
@@ -52,8 +50,6 @@ hr {
     height: .25em !important;
 }
 /*Cup of Java Circles*/
-
-
 #roast-selection {
     color: #140b08;
     font-family: 'Bitter', serif;
@@ -66,42 +62,44 @@ hr {
     display: inline-block;
 }
 .cupOfJo1 {
-    border: 8px solid #847f7d;
+    border: 6px solid #847f7d;
     border-inline-color: #654321;
     background-color: #a06e39;
     border-radius: 50%;
-    height:75px;
-    width:75px;
+    height:45px;
+    width:45px;
 }
 .cupOfJo2 {
-    border: 8px solid #847f7d;
+    border: 6px solid #847f7d;
     border-inline-color: #432822;
     background-color: #432822;
     border-radius: 50%;
-    height:75px;
-    width:75px;
+    height:45px;
+    width:45px;
 }
 .cupOfJo3 {
-    border: 8px solid #847f7d;
+    border: 6px solid #847f7d;
     border-inline-color: #654321;
     background-color: #140b08;
     border-radius: 50%;
-    height:75px;
-    width:75px;
+    height:45px;
+    width:45px;
 }
 .cupOfJo4 {
-    border: 8px solid #847f7d;
+    border: 6px solid #847f7d;
     border-inline-color: #654321;
     background-color: #432822;
     border-radius: 50%;
-    height:75px;
-    width:75px;
+    height:45px;
+    width:45px;
+}
+.circle-text{
+    margin-left: 15px;
 }
 table {
     border-collapse: collapse;
     margin: 15px 0;
 }
-
 td, th, button {
     border: 1px solid black;
     padding: 5px 10px;
@@ -115,9 +113,8 @@ button:hover{
     display: flex;
     justify-content: space-evenly;
     width: 90%;
-    margin: auto;
+    margin: .5em auto 0 auto;
 }
-
 .coffee-card {
     max-height: 245px;
 }
@@ -127,7 +124,7 @@ button:hover{
     justify-content: center;
 }
 .coffeeType>h4{
-    margin-bottom: 0;
+    margin: 0 0 0 12px;
 }
 .container{
     display: flex;
@@ -141,7 +138,7 @@ button:hover{
     width: 50%;
     height: 100%;
     text-align: center;
-    padding-top: .25em;
+    padding-top: 2.25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +150,7 @@ button:hover{
     font-family: 'Bitter', sans-serif;
     height: 100%;
     width: 30%;
+    font-size: .5em;
 }
 .dateContainer {
     display: flex;
@@ -163,11 +161,12 @@ button:hover{
     margin: auto;
 }
 #applyDate{
-    margin-top: .1em;
+    margin: .1em 0;
 }
 #seasons{
     max-width: 75%;
     margin: auto;
+    font-size: .5em;
 }
 .coffeeInput {
     display: flex;
@@ -179,6 +178,7 @@ button:hover{
 }
 #customCoffeeButton {
     margin: auto 0;
+    font-size: .5em;
 }
 .companyProduct {
     height: 100%;
@@ -193,10 +193,9 @@ button:hover{
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
 }
-
 .footer {
-    /*height: 28vh;*/
-    height: 50vh;
+    /*height: 28vh; for mobile*/
+    height: 30vh;
     width: 80vw;
     margin: auto;
     display: flex;
@@ -205,6 +204,7 @@ button:hover{
 .logo{
     max-width: 100%;
     max-height: 100%;
+    height: 235px;
 }
 .social{
     color: aliceblue;
@@ -239,24 +239,122 @@ a{
 #coffeeName {
     padding-left: 1em;
 }
+input {
+    width: 60px;
+}
 .coffeeMug {
     margin: auto;
     height: 100%;
     width: 100%;
 }
-.addCoffeeArea{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+span{
+    font-size: 9px;
 }
-.pickRoast{
-    width: 25%;
+.socialText{
+    font-size: .5em;
 }
-.coffeeSearch{
-    width: 25%;
+.coffeeInput>label{
+    font-size: .5em;
 }
-/*@media screen and(max-width: 425px){*/
-/*    footer{*/
-/*        height: 50vh;*/
-/*    }*/
-/*}*/
+select{
+    width: 60px;
+}
+h2{
+    font-size: 16px;
+}
+#dogLogo{
+    width: 40%;
+}
+.coffeeType>h4, h4{
+    font-size: 12px;
+}
+@media screen and (min-width: 550px){
+    span{
+        font-size: 14px;
+    }
+    .coffeeType>h4, h4{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    #dogLogo{
+        width: 25%;
+    }
+    .cupOfJo1 {
+        border: 8px solid #847f7d;
+        border-inline-color: #654321;
+        background-color: #a06e39;
+        border-radius: 50%;
+        height:85px;
+        width:85px;
+    }
+    .cupOfJo2 {
+        border: 8px solid #847f7d;
+        border-inline-color: #432822;
+        background-color: #432822;
+        border-radius: 50%;
+        height:85px;
+        width:85px;
+    }
+    .cupOfJo3 {
+        border: 8px solid #847f7d;
+        border-inline-color: #654321;
+        background-color: #140b08;
+        border-radius: 50%;
+        height:85px;
+        width:85px;
+    }
+    .cupOfJo4 {
+        border: 8px solid #847f7d;
+        border-inline-color: #654321;
+        background-color: #432822;
+        border-radius: 50%;
+        height:85px;
+        width:85px;
+    }
+    h3{
+        font-size: 1.05em;
+        font-family: 'Bitter', serif;
+        color: #654321;
+    }
+    .footer{
+        height: 50vh;
+    }
+    .coffeeWord{
+        font-size: 1em;
+    }
+    .logo{
+        height: 100%;
+    }
+    .socialText{
+        font-size: 1em;
+    }
+    .availableCoffeesSpot{
+        padding-top: .25em;
+    }
+    .coffeeInput>label{
+        font-size: 1em;
+    }
+    select{
+        width: 130px;
+    }
+    input {
+        width: 165px;
+    }
+    #customCoffeeButton {
+        font-size: 1em;
+    }
+    #seasons{
+        font-size: 1em;
+    }
+    #applyDate{
+        margin-bottom: .75em;
+    }
+    .main {
+        margin: auto;
+    }
+    #setTheDate{
+        margin-bottom: 1em;
+    }
+}

@@ -14,94 +14,84 @@
 <header>
     <img src="image/doggie.png" class="center" id="dogLogo" alt="coffeeLogo">
 </header>
-    <h1>huskee coffee</h1>
-    <h2>coffee with a bite</h2>
+<h1>huskee coffee</h1>
+<h2>coffee with a bite</h2>
 <a href="location.html" target="_blank"><h4>600 Navarro St #600, San Antonio, TX 78205</h4></a>
-    <hr>
-    <hr>
-<div class="upperArea">
-    <div class="dateContainer">
-        <h2>unlock our seasonal coffees</h2>
-        <label>set the date<br><br>
-            <input type="month" id="chooseDate"><br>
-        </label><br>
-        <h4 id="applyDate">push the button</h4>
-        <button id="seasons">Tis the season</button>
+<hr>
+<hr>
+<div class="dateContainer">
+    <h2>unlock our seasonal coffees</h2>
+    <label id="setTheDate">set the date
+        <input type="month" id="chooseDate">
+    </label><br>
+    <h4 id="applyDate">push the button</h4>
+    <button id="seasons">Tis the season</button>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="coffeeType">
+            <h4>Light</h4>
+        </div>
+        <div id="lightCoffee">
+            <h4 class="cupOfJo1 circle-text"></h4>
+            <p class="coffeeWord" id="eachLight"></p>
+        </div>
     </div>
-
-    <div class="main">
-        <div class="container">
-            <div class="coffeeType">
-                <h4>Light</h4>
-            </div>
-            <div id="lightCoffee">
-                <h4 class="cupOfJo1 circle-text"></h4>
-                <p class="coffeeWord" id="eachLight"></p>
-            </div>
+    <div class="container">
+        <div class="coffeeType">
+            <h4>Medium</h4>
         </div>
-        <div class="container">
-            <div class="coffeeType">
-                <h4>Medium</h4>
-            </div>
-            <div id="mediumCoffee">
-                <h4 class="cupOfJo2 circle-text"></h4>
-                <p class="coffeeWord" id="eachMedium"></p>
-            </div>
+        <div id="mediumCoffee">
+            <h4 class="cupOfJo2 circle-text"></h4>
+            <p class="coffeeWord" id="eachMedium"></p>
         </div>
-        <div class="container">
-            <div class="coffeeType">
-                <h4>Dark</h4>
-            </div>
-            <div id="darkCoffee">
-                <h4 class="cupOfJo3 circle-text"></h4>
-                <p class="coffeeWord" id="eachDark"></p>
-            </div>
+    </div>
+    <div class="container">
+        <div class="coffeeType">
+            <h4>Dark</h4>
         </div>
-        <div class="container">
-            <div class="coffeeType">
-                <h4>Holiday</h4>
-            </div>
-            <div id="holidayCoffee">
-                <h4 class="cupOfJo4 circle-text"></h4>
-                <p class="coffeeWord" id="eachHoliday"></p>
-            </div>
+        <div id="darkCoffee">
+            <h4 class="cupOfJo3 circle-text"></h4>
+            <p class="coffeeWord" id="eachDark"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="coffeeType">
+            <h4>Holiday</h4>
+        </div>
+        <div id="holidayCoffee">
+            <h4 class="cupOfJo4 circle-text"></h4>
+            <p class="coffeeWord" id="eachHoliday"></p>
         </div>
     </div>
 </div>
 <hr>
 <hr>
 <div class="coffeeInput">
-    <div class="pickRoast">
-        <label>
-            Pick the Roast
-            <select id="inHouseCoffeeRoast">
-                <option value="" disabled selected>Select your Roast</option>
-                <option value="all">All</option>
-                <option value="light">Light</option>
-                <option value="medium">Medium</option>
-                <option value="dark">Dark</option>
-                <option value="holiday">Holiday</option>
-            </select>
-        </label>
-    </div>
-    <div class="coffeeSearch">
-        <label>Find your Coffee
-            <input id="coffeeName" onfocus="this.value=''">
-        </label>
-    </div>
-    <div class="addCoffeeArea">
-        <label>
-            Add a coffee
-            <select id="customCoffeeRoast">
-                <option value="" disabled selected>Select your Roast</option>
-                <option value="light">Light</option>
-                <option value="medium">Medium</option>
-                <option value="dark">Dark</option>
-            </select>
-            <input id="customCoffeeName" placeholder="Custom Coffee!" onfocus="this.value=''">
-        </label>
-        <button id="customCoffeeButton">Add your custom coffee</button>
-    </div>
+    <label>
+        Pick the Roast
+        <select id="inHouseCoffeeRoast">
+            <option value="" disabled selected>Select your Roast</option>
+            <option value="all">All</option>
+            <option value="light">Light</option>
+            <option value="medium">Medium</option>
+            <option value="dark">Dark</option>
+            <option value="holiday">Holiday</option>
+        </select>
+    </label>
+    <label>Find your Coffee
+        <input id="coffeeName" onfocus="this.value=''"></label>
+    <label>
+        Add a coffee
+        <select id="customCoffeeRoast">
+            <option value="" disabled selected>Select your Roast</option>
+            <option value="light">Light</option>
+            <option value="medium">Medium</option>
+            <option value="dark">Dark</option>
+        </select>
+        <input id="customCoffeeName" placeholder="Custom Coffee!" onfocus="this.value=''">
+    </label>
+    <button id="customCoffeeButton">Add your custom coffee</button>
 </div>
 <div class="footer">
     <div class="companyProduct">
@@ -118,9 +108,9 @@
 <hr>
 <div class="followUsArea">
     <div class="socialMedia">
-        <a href="https://twitter.com/CoffeeHuskee" target="_blank"><p><i class="social fab fa-twitter"></i>Follow us on Twitter!</p></a>
-        <a href="https://www.facebook.com/huskee.coffee.7/" target="_blank"><p><i class="social fab fa-facebook"></i>Find us on FaceBook!</p></a>
-        <a href="https://www.instagram.com/huskeecoffee/" target="_blank"><p><i class="social fab fa-instagram"></i>Check out our Instagram!</p></a>
+        <a href="https://twitter.com/CoffeeHuskee" target="_blank"><p class="socialText"><i class="social fab fa-twitter"></i>Follow us on Twitter!</p></a>
+        <a href="https://www.facebook.com/huskee.coffee.7/" target="_blank"><p class="socialText"><i class="social fab fa-facebook"></i>Find us on FaceBook!</p></a>
+        <a href="https://www.instagram.com/huskeecoffee/" target="_blank"><p class="socialText"><i class="social fab fa-instagram"></i>Check out our Instagram!</p></a>
     </div>
 </div>
 <script src="main.js"></script>
