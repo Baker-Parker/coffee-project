@@ -40,7 +40,7 @@ h2, h4, label {
     text-align: center;
 }
 h3{
-    font-size: .7em;
+    font-size: .9em;
     font-family: 'Bitter', serif;
     color: #654321;
 }
@@ -149,7 +149,7 @@ button:hover{
 .coffeeWord {
     font-family: 'Bitter', sans-serif;
     height: 100%;
-    width: 30%;
+    width: 62%;
     font-size: .5em;
 }
 .dateContainer {
@@ -248,7 +248,7 @@ input {
     width: 100%;
 }
 span{
-    font-size: 9px;
+    font-size: 11px;
 }
 .socialText{
     font-size: .5em;
@@ -270,7 +270,7 @@ h2{
 }
 @media screen and (min-width: 550px){
     span{
-        font-size: 14px;
+        font-size: 17px;
     }
     .coffeeType>h4, h4{
         font-size: 16px;
@@ -314,7 +314,7 @@ h2{
         width:85px;
     }
     h3{
-        font-size: 1.05em;
+        font-size: 1.25em;
         font-family: 'Bitter', serif;
         color: #654321;
     }
